@@ -26,6 +26,8 @@ _start:
 ;    rdi -- address of multiplier #1 (long number)
 ;    rsi -- address of multiplier #2 (long number)
 ;    rcx -- length of long numbers in qwords
+; expected:
+;    rcx * 8 buffer bytes before rdi
 ; result:
 ;    multiplication is written to rdi
 ;    rcx -- length of multiplication in qwords
